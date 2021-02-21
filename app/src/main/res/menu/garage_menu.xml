@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <item
+        android:id="@+id/garageSaleHomeFragment"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home"
+              >
+    </item>
+    <item
+        android:id="@+id/myPostFragment"
+        android:title="My Post"
+              android:icon="@drawable/ic_baseline_person_24"
+        >
+    </item>
+    <item
+        android:title="Post"
+        android:icon="@drawable/ic_baseline_post_add_"
+        android:id="@+id/postFragment"
+
+
+        >
+
+    </item>
+
+
+
+
+
+    <item
+        android:title="General Information"
+        >
+        <menu>
+            <item android:id="@+id/aboutGarageFragment"
+                android:title="About"
+                android:icon="@drawable/ic_baseline_info_24"
+
+                />
+        </menu>
+    </item>
+
+
+</menu>
+
+
+
+
+
+

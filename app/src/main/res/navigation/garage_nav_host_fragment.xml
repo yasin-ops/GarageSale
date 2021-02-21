@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/garage_nav_host_fragment"
+    app:startDestination="@id/garageSaleHomeFragment">
+
+    <fragment
+        android:id="@+id/garageSaleHomeFragment"
+        android:name="com.muhammadyaseen.classifiedapp.GarageSaleHomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_garage_sale_home" >
+        <action
+            android:id="@+id/action_garageSaleHomeFragment_to_aboutFragment"
+            app:destination="@id/aboutGarageFragment" />
+        <action
+            android:id="@+id/action_garageSaleHomeFragment_to_postFragment"
+            app:destination="@id/postFragment" />
+        <action
+            android:id="@+id/action_garageSaleHomeFragment_to_settingFragment"
+            app:destination="@id/myPostFragment" />
+        <argument
+            android:name="message"
+            app:argType="string"
+            android:defaultValue="default" />
+        <action
+            android:id="@+id/action_garageSaleHomeFragment_to_myPostFragment"
+            app:destination="@id/myPostFragment" />
+        <action
+            android:id="@+id/action_garageSaleHomeFragment_to_aboutGarageFragment"
+            app:destination="@id/aboutGarageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="com.muhammadyaseen.classifiedapp.PostFragment"
+        android:label="Post"
+        tools:layout="@layout/fragment_post" >
+        <action
+            android:id="@+id/action_postFragment_to_garageSaleHomeFragment"
+            app:destination="@id/garageSaleHomeFragment" />
+        <action
+            android:id="@+id/action_postFragment_to_garageSaleHomeFragment2"
+            app:destination="@id/garageSaleHomeFragment" />
+        <action
+            android:id="@+id/action_postFragment_to_aboutGarageFragment"
+            app:destination="@id/aboutGarageFragment" />
+        <action
+            android:id="@+id/action_postFragment_to_myPostFragment"
+            app:destination="@id/myPostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myPostFragment"
+        android:name="com.muhammadyaseen.classifiedapp.myPostFragment"
+        android:label="My Post"
+        tools:layout="@layout/fragment_my_post" />
+    <fragment
+        android:id="@+id/aboutGarageFragment"
+        android:name="com.muhammadyaseen.classifiedapp.aboutGarageFragment"
+        android:label="About Garage"
+        tools:layout="@layout/fragment_about_garage" />
+
+
+</navigation>

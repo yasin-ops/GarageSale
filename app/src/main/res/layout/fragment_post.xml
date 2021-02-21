@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.amar.library.ui.StickyScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:fillViewport="true"
+    app:stickyHeader="@id/post_Header"
+    app:stickyFooter="@id/post_footer"
+    android:background="#E3E0E0"
+
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+
+        android:background="#E3E0E0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#E3E0E0">
+        <LinearLayout
+            android:id="@+id/post_Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#E3E0E0">
+        <TextView
+            android:id="@+id/txtUploadImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Please Upload Image"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:id="@+id/post_image"
+            android:src="@drawable/imagepreview"
+
+
+            />
+
+        <ProgressBar
+            android:id="@+id/uploadProgress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+        </LinearLayout>
+
+<EditText
+    android:id="@+id/post_tittle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Post Tittle"
+    android:inputType="textPersonName"
+    android:layout_marginStart="3sp"
+    android:textAllCaps="false"
+    android:layout_marginEnd="3sp"
+    android:textColor="@color/colorPrimaryDark"
+    android:textStyle="bold"
+    android:textSize="20sp"
+    />
+        <EditText
+            android:id="@+id/post_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Post Price"
+            android:inputType="number"
+
+            android:layout_marginStart="3sp"
+            android:textAllCaps="false"
+            android:layout_marginEnd="3sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/post_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Post Description"
+
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:inputType="textMultiLine"
+            android:paddingBottom="50dp"
+            android:layout_marginStart="3sp"
+            android:textAllCaps="false"
+            android:layout_marginEnd="3sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/post_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Post City"
+            android:inputType="textPersonName"
+            android:layout_marginStart="3sp"
+            android:textAllCaps="false"
+            android:layout_marginEnd="3sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/post_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Post Country"
+            android:inputType="textPersonName"
+            android:layout_marginStart="3sp"
+            android:textAllCaps="false"
+            android:layout_marginEnd="3sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/post_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Post Number"
+            android:layout_marginStart="3sp"
+            android:textAllCaps="false"
+            android:inputType="number"
+            android:layout_marginEnd="3sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+        <Button
+            android:id="@+id/upload_Post_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload POST"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/blue1"
+
+            />
+
+
+        <LinearLayout
+            android:id="@+id/post_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp">
+
+
+
+            <TextView
+
+                android:id="@+id/PostFragmentToHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#535766"
+                android:drawableLeft="@drawable/ic_baseline_home"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Home"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/PostFragmentToMyPOST"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0BC6A0"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="MY POST"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/PostFragmentToInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:drawableLeft="@drawable/ic_baseline_info_24"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="About"
+                android:background="@color/green2"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/PostFragmentToLogout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/yellow"
+                android:drawableLeft="@drawable/ic_baseline_exit_to_app_24"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Exit"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</com.amar.library.ui.StickyScrollView>
+
+
+
+
+

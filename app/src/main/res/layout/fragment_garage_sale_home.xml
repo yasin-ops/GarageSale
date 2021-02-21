@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amar.library.ui.StickyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".GarageSaleHomeFragment"
+    android:id="@+id/garageSaleHomeFragment"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:focusable="true"
+    app:layout_constraintTop_toTopOf="parent"
+    app:stickyFooter="@+id/footer"
+    app:stickyHeader="@+id/header"
+
+
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <LinearLayout
+          android:id="@+id/header"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="#E3E0E0"
+          android:orientation="vertical"
+          android:padding="15dp">
+
+    <SearchView
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:queryHint="Search here"
+    android:iconifiedByDefault="false"
+    android:backgroundTint="@color/colorPrimaryDark"
+
+
+    android:id="@+id/SearchView"
+        >
+
+</SearchView>
+
+      </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_circular"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="180dp"
+
+        android:visibility="visible"
+        />
+
+        <RelativeLayout
+
+            android:id="@+id/other_product1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+        <androidx.recyclerview.widget.RecyclerView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"
+        />
+
+
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/hometoPostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#535766"
+                android:visibility="invisible"
+                android:drawableLeft="@drawable/ic_baseline_post_add_"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="POST"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/hometoMyPostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:background="#0BC6A0"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="MY POST"
+
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/homeFragmentToInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/green2"
+                android:drawableLeft="@drawable/ic_baseline_info_24"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="About"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/hometologout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:background="@color/yellow"
+                android:drawableLeft="@drawable/ic_baseline_exit_to_app_24"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Exit"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</com.amar.library.ui.StickyScrollView>
